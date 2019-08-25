@@ -1,0 +1,20 @@
+{
+  "name": "typed-arbor",
+  "version": "0.1.0",
+  "description": "rewrite arbor.js with vanillajs",
+  "main": "index.js",
+  "scripts": {
+    "build": "prettier --config ./.prettierrc --write ./src/**/*.ts | rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuta4j1",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "rollup": "^1.19.4",
+    "rollup-plugin-prettier": "^0.6.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.3"
+  }
+}
