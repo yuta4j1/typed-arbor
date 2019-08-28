@@ -21,13 +21,25 @@ export type RGB = {
 }
 
 export type DrawStyle = {
-    background: string,
-    fill: string,
-    stroke: string,
+    background: string | RGB,
+    fill: string | RGB,
+    stroke: string | RGB,
     width: number
 }
 
 export type FontStyle = {
+    font: string,
+    size: number,
+    align: string,
+    color: RGB,
+    alpha: number,
+    baseline: string
+}
+
+// TODO FontStyleと統合できない？
+export type TextStyle = {
+    x: number,
+    y: number,
     font: string,
     size: number,
     align: string,

@@ -19,7 +19,7 @@ const primitives = (ctx: CanvasRenderingContext2D, _drawStyle: DrawStyle, _fontS
             y: number, 
             w: number, 
             h: number, 
-            style: any = {}
+            style: OvalStyle
         ) {
             this.x = x
             this.y = y
@@ -179,7 +179,7 @@ const primitives = (ctx: CanvasRenderingContext2D, _drawStyle: DrawStyle, _fontS
             y1: number, 
             x2: number, 
             y2: number,
-            style: PathStyle
+            style?: PathStyle
         ) {
             this.points = [
                 { x: x1, y: y1 }, 
